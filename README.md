@@ -30,4 +30,4 @@ You can accomplish this by setting the following environment variable
     export DISABLE_JSLINT="true"
 
 Live JSFiddle Example:
-http://jsfiddle.net/markmsmith/WUxMA/
+http://jsfiddle.net/markmsmith/WUxMA/1/
