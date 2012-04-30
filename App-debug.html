@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>LookbackApp</title>
+    <title>AnalyticsChartApp</title>
 
     <script type="text/javascript" src="https://rally1.rallydev.com/apps/2.0p/sdk-debug.js"></script>
     
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
     <script type="text/javascript" src="http://code.highcharts.com/2.1.6/highcharts.js"></script>
     <script type="text/javascript" src="https://raw.github.com/JoeKuan/Highcharts_ExtJs_4/master/Chart/ux/HighChart.js"></script>
     
     <script type="text/javascript" src="https://raw.github.com/lmaccherone/Lumenize/master/deploy/lumenize.js"></script>
-    
+
     <script type="text/javascript">
-    
         Rally.onReady(function() {
+        	Ext.define('Rally.ui.chart.Chart', {
+				extend: 'Chart.ux.HighChart',
+				alias: 'widget.rallychart'        
+			});
+			
             Rally.loadScripts([
                 "App.js"
             ], function() {
                 Rally.launchApp('CustomApp', {
-                    name: 'LookbackApp'
+                    name: 'AnalyticsChartApp'
                 })
-            });
+            }, true);
         });
     </script>
 
 <link rel="stylesheet" type="text/css" href="app.css">
 </head>
-<body>
-</body>
+<body></body>
 </html>

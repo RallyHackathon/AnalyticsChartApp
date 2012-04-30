@@ -361,6 +361,11 @@ Ext.define('CLASS_NAME', {
     END
 
     JAVASCRIPT_INLINE_BLOCK_TPL = <<-END
+			Ext.define('Rally.ui.chart.Chart', {
+				extend: 'Chart.ux.HighChart',
+				alias: 'widget.rallychart'        
+			});
+			
 JAVASCRIPT_BLOCK
             Rally.launchApp('CLASS_NAME', {
                 name: 'APP_NAME'
@@ -374,9 +379,20 @@ JAVASCRIPT_BLOCK
     <title>APP_TITLE</title>
 
     <script type="text/javascript" src="APP_SDK_PATH"></script>
+    
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
+    <script type="text/javascript" src="http://code.highcharts.com/2.1.6/highcharts.js"></script>
+    <script type="text/javascript" src="https://raw.github.com/JoeKuan/Highcharts_ExtJs_4/master/Chart/ux/HighChart.js"></script>
+    
+    <script type="text/javascript" src="https://raw.github.com/lmaccherone/Lumenize/master/deploy/lumenize.js"></script>
 
     <script type="text/javascript">
         Rally.onReady(function() {
+        	Ext.define('Rally.ui.chart.Chart', {
+				extend: 'Chart.ux.HighChart',
+				alias: 'widget.rallychart'        
+			});
+			
             Rally.loadScripts([
                 JAVASCRIPT_BLOCK
             ], function() {
@@ -400,6 +416,12 @@ STYLE_BLOCK
     <title>APP_TITLE</title>
 
     <script type="text/javascript" src="APP_SDK_PATH"></script>
+    
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
+    <script type="text/javascript" src="http://code.highcharts.com/2.1.6/highcharts.js"></script>
+    <script type="text/javascript" src="https://raw.github.com/JoeKuan/Highcharts_ExtJs_4/master/Chart/ux/HighChart.js"></script>
+    
+    <script type="text/javascript" src="https://raw.github.com/lmaccherone/Lumenize/master/deploy/lumenize.js"></script>
 
     <script type="text/javascript">
         Rally.onReady(function() {

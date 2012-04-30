@@ -175,7 +175,7 @@ Ext.define('CustomApp', {
         });
         
 		var chart = {
-			xtype : 'highchart',
+			xtype : 'rallychart',
 			id : 'chart',
 			height: 400,
 			series : [{
