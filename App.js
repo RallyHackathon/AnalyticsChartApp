@@ -159,7 +159,6 @@ Ext.define('CustomApp', {
         
         var groups = lumenize.groupBy(snapshots, groupBySpec);
         var rows = this.convertGroupingsToRows(groups);
-        console.log(rows);
         
         var snapshotStore = Ext.create('Ext.data.Store', {
             storeId:'snapshotStore',
