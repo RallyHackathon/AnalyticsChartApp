@@ -220,6 +220,9 @@ Ext.define('CustomApp', {
 				}]
 			  },
 			  plotOptions : {
+				  column: {
+					  color: '#F00'                              
+				  },
 				series : {
 				  animation : {
 					duration : 3000,
